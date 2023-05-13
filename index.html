@@ -1,0 +1,308 @@
+<html>
+
+    <head>
+        <title>PhotoShot</title>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="imagex/png" href="assets/ico.png">
+    </head>
+
+    <body>
+        <header>
+            <div class="center">
+                <div class="logo"><img src="assets/logo.png" alt="Image" height="55"></div><!--logo-->
+                <div class="search">
+                    <input placeholder="Digite para pesquisar..." type="text" name="buscar"
+                     onfocusin="openlist()" onfocusout="closelist()"/>  
+
+                </div><!--search-->
+                <div class="menu"> 
+                        <button style="font-size: 110%;">Início</button>
+                        <button style="font-size: 110%;">Explorar</button>
+                        <button style="font-size: 110%;">Configurações</button>
+                </div><!--menu-->
+                <button class="profile" onclick="openmenu()"><img id="profileimg" src="assets/pprofile1.png" alt="Image" height="45"></button>
+                    <script>
+                        function openmenu() {
+                          document.getElementById("pmenu").style.display = "block";
+                        }
+                        
+                        function closemenu() {
+                            document.getElementById("pmenu").style.display = "none";
+                        }
+
+                        addEventListener('scroll', closemenu);
+                    </script>
+            </div><!--center-->
+
+        </header>
+        <script src="script.js"></script>
+        <div class="lista" id="list" onclick="closelist()">
+            <ul>
+                <li>paulo_vasconcellos29</li>
+                <li>bina_ps_</li>
+                <li>alexiarodrigues</li>
+                <li>j_h026</li>
+                <li>vicktor_emannoel</li>
+                <li>freddy_cat</li>
+                <li>vitteixer</li>
+            </ul>
+            <script>
+                function openlist() {
+                    document.getElementById("list").style.display = "block";
+                }
+
+                function closelist() {
+                        document.getElementById("list").style.display = "none";
+                }
+            </script>
+            </div>
+
+        <div class="dropdownmenu" id="pmenu" onclick="closemenu()">
+            <ul>
+                <li>Tema</li>
+                <li id="line">Modo rápido</li>
+                <li>Sobre</li>
+                <li>Política de privacidade</li>
+                <li id="exit">Sair</li>
+            </ul>
+        </div>  
+
+        <script>
+            function openmenu() {
+                document.getElementById("pmenu").style.display = "block";
+            }
+            
+            function closemenu() {
+                document.getElementById("pmenu").style.display = "none";
+            } 
+        </script>
+
+        </div>
+
+        <div class="sidepannel">
+        </div>
+            <div class="centerfeed">
+                <section class="feed">
+
+                    <div class="container1">
+                    <div class="ppicture1">
+                        <button class="openP" onclick="openP1()">
+                            <img src="assets/pprofile1.png"> <div class="pname1">vitteixer</div> 
+                        </button> <!-- profile+button -->
+                                <div class="popup1" id="p1" onclick="closeP1()">
+                                    <ul>
+                                        <li style="border-top: 1px solid #999; padding-top: 5px;">Vitória Teixeira</li>
+                                        <li>Cyber-Shot DSC-HX400V</li>
+                                        <li>Sigma 50mm f/1.4</li>
+                                    </ul>
+                                </div>
+                                <script>
+                                    function openP1() {
+                                      document.getElementById("p1").style.display = "block";
+                                    }
+
+                                    function closeP1(){
+                                        document.getElementById("p1").style.display = "none";
+                                    }
+
+                                    addEventListener('scroll', closeP1);
+                                </script>
+                    </div>
+                        <img src="assets/feed1.jpg">
+                    </div><!--container1-->
+                    <div class="container2">
+                        <div class="ppicture2">
+                        <button class="openP" onclick="openP2()">
+                            <img src="assets/pprofile1.png"> <div class="pname1">vitteixer</div>                            
+                        </button>
+                            <div class="popup1" id="p2" onclick="closeP2()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Vitória Teixeira</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP2() {
+                                  document.getElementById("p2").style.display = "block";
+                                }
+                                
+                                function closeP2() {
+                                  document.getElementById("p2").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP2);
+                            </script>
+                        </div>
+                        <img src="assets/feed2.jpg">
+                    </div><!--container2-->
+
+                    <div class="container3">
+                        <div class="ppicture3">
+                        <button class="openP" onclick="openP3()">
+                            <img src="assets/pprofile1.png"> <div class="pname1">vitteixer</div>
+                        </button>
+                            <div class="popup1" id="p3" onclick="closeP3()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Vitória Teixeira</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP3() {
+                                  document.getElementById("p3").style.display = "block";
+                                }
+                                
+                                function closeP3() {
+                                  document.getElementById("p3").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP3);
+                            </script>
+                        </div>                        
+                        <img src="assets/feed3.jpg">
+
+                    </div><!--container3-->
+
+                    <div class="container4">
+                        <div class="ppicture4">
+                            <button class="openP" onclick="openP4()">
+                            <img src="assets/pprofile1.png"> <div class="pname1">vitteixer</div>
+                        </button>
+                            <div class="popup1" id="p4" onclick="closeP4()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Vitória Teixeira</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP4() {
+                                  document.getElementById("p4").style.display = "block";
+                                }
+                                
+                                function closeP4() {
+                                  document.getElementById("p4").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP4);
+                            </script>
+                        </div>                        
+                        <img src="assets/feed4.jpg">
+
+                    </div><!--container4-->
+                    <div class="container5">
+                         <div class="ppicture5">
+                            <button class="openP" onclick="openP5()">
+                            <img src="assets/pprofile1.png"> <div class="pname1">vitteixer</div>
+                        </button>
+                            <div class="popup1" id="p5" onclick="closeP5()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Vitória Teixeira</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP5() {
+                                  document.getElementById("p5").style.display = "block";
+                                }
+                                
+                                function closeP5() {
+                                  document.getElementById("p5").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP5);
+                            </script>
+                        </div>                       
+                        <img src="assets/feed5.jpg">
+                    </div><!--container5-->
+
+                    <div class="container6">
+                         <div class="ppicture6">
+                            <button class="openP" onclick="openP6()">
+                            <img src="assets/pprofile2.jpg"> <div class="pname2">freddy_cat</div>
+                        </button>
+                            <div class="popup1" id="p6" onclick="closeP6()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Freddy</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP6() {
+                                  document.getElementById("p6").style.display = "block";
+                                }
+                                
+                                function closeP6() {
+                                  document.getElementById("p6").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP6);
+                            </script>
+                        </div>                       
+                        <img src="assets/feed6.jpg">
+
+                    </div><!--container6-->
+
+                    <div class="container7">
+                        <div class="ppicture7">
+                            <button class="openP" onclick="openP7()">
+                            <img src="assets/pprofile2.jpg"> <div class="pname2">freddy_cat</div>
+                        </button>
+                            <div class="popup1" id="p7" onclick="closeP7()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Freddy</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP7() {
+                                  document.getElementById("p7").style.display = "block";
+                                }
+                                
+                                function closeP7() {
+                                  document.getElementById("p7").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP7);
+                            </script>
+                        </div>                        
+                        <img src="assets/feed7.jpg">
+
+                    </div><!--container7-->
+
+                    <div class="container8">
+                        <div class="ppicture8">
+                            <button class="openP" onclick="openP8()">
+                            <img src="assets/pprofile1.png"> <div class="pname1">vitteixer</div>
+                        </button>
+                            <div class="popup1" id="p8" onclick="closeP8()">
+                                <ul>
+                                    <li style="border-top: 1px solid #999; padding-top: 5px;">Vitória Teixeira</li>
+                                    <li>Cyber-Shot DSC-HX400V</li>
+                                    <li>Sigma 50mm f/1.4</li>
+                                </ul>
+                            </div>
+                            <script>
+                                function openP8() {
+                                  document.getElementById("p8").style.display = "block";
+                                }
+                                
+                                function closeP8() {
+                                  document.getElementById("p8").style.display = "none";
+                                }
+                                addEventListener('scroll', closeP8);
+                            </script>
+                        </div>                        
+                        <img src="assets/feed8.jpg">
+
+                    </div><!--container8-->
+                    
+                </section><!--feed-->
+            </div><!--centerfeed-->
+
+    </body>
+
+</html>
